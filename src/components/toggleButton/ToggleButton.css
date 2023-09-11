@@ -1,0 +1,19 @@
+.toggleDiv{
+    display: inline-flex;
+    vertical-align: text-bottom;
+    margin-bottom: 4px;
+    margin-left: 2%;
+    transition-duration: 1s;
+    border-radius: 34px;
+    height: 15px;
+    width: 30px;
+}
+
+.themeButton{
+    background-color: transparent;
+    transition-duration: 1s;
+    position: relative;
+    font-size: 1.7em;
+    border: none;
+    top: -16px;
+}
