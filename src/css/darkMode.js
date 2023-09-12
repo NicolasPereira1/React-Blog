@@ -1,22 +1,22 @@
 export const darkMode = {
-    name: '🌛',
+    name: 'dark',
+    icon: '🌛',
     body : {
         backgroundColor: 'black',
         color: 'white'
     },
     post : {
         border: 'white solid 1px',
-        '&:hover' : {
-            backgroundColor: '#171717',
-            cursor: 'pointer'
+        hover: {
+            backgroundColor: '#333333'
         }
     },
     inputButton : {
         backgroundColor: '#333333',
         color: 'white',
-    },
-    '::placeholder' : {
-        color: 'white'
+        '& :placeholder': {
+            color: 'white'
+        }
     },
     disabled : {
         cursor: 'not-allowed',
@@ -37,7 +37,7 @@ export const darkMode = {
         backgroundColor: '#424572'
     },
     themeButton : {
-        right: '2px'
+        right: '-6px'
     },
     separator : {
         borderLeft: 'solid 1px white',

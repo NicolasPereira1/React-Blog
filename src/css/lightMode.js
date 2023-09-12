@@ -1,7 +1,11 @@
 export const lightMode = {
-    name: '🌞',
+    name: 'light',
+    icon: '🌞',
     post: {
-        border: 'black solid 1px'
+        border: 'black solid 1px',
+        hover: {
+            backgroundColor: '#ececec'
+        }
     },
     inputButton: {
         border: 'solid dark',
@@ -28,6 +32,6 @@ export const lightMode = {
         backgroundColor: '#ffc41a'
     },
     themeButton: {
-        right: '18px'
+        right: '16px'
     }
 };

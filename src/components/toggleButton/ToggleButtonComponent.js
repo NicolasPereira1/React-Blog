@@ -2,8 +2,7 @@ import {ThemeContext, useTheme} from "../../hooks/useTheme";
 import './ToggleButton.css';
 
 const ToggleButtonComponent = () => {
-    const {theme, setLightMode, setDarkMode} = useTheme(ThemeContext);
-    const handleClick = (e) => theme.name === '🌞' ? setDarkMode() : setLightMode();
+    const {theme, toggleTheme} = useTheme(ThemeContext);
     return(
         <div
             className='toggleDiv'
@@ -11,8 +10,8 @@ const ToggleButtonComponent = () => {
             <button
                 className='themeButton'
                 style={theme.themeButton}
-                onClick={handleClick}>
-                {theme.name}
+                onClick={toggleTheme}>
+                {theme.icon}
             </button>
         </div>
     );

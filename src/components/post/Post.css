@@ -11,6 +11,9 @@
     padding: 20px 20px;
     margin: 20px;
     width: 350px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .postTitle {
