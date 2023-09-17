@@ -1,6 +1,6 @@
 export const darkMode = {
     name: 'dark',
-    icon: '🌛',
+    icon: '🌜',
     body : {
         backgroundColor: 'black',
         color: 'white'
@@ -37,7 +37,7 @@ export const darkMode = {
         backgroundColor: '#424572'
     },
     themeButton : {
-        right: '-6px'
+        right: '-4px'
     },
     separator : {
         borderLeft: 'solid 1px white',

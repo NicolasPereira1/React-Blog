@@ -32,6 +32,6 @@ export const lightMode = {
         backgroundColor: '#ffc41a'
     },
     themeButton: {
-        right: '16px'
+        right: '20px'
     }
 };
