@@ -10,6 +10,7 @@ const ArticleComponent = () => {
     }, [counter]);
     return(
         <>
+            <h3>Articles :</h3>
             <h1>h1</h1>
             <h2>h2</h2>
             <h3>h3</h3>

@@ -47,6 +47,7 @@ export default function AuthenticationComponent(){
         '👤 You are not authenticated';
     return (
         <>
+            <h3>Authentication :</h3>
             <p>{message}
                 <strong>{ isAuthenticated && username }</strong>.
             </p>

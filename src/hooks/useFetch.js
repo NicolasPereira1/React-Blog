@@ -5,16 +5,29 @@ export const HTTP_METHOD = {
     POST: 'POST',
     PUT: 'PUT',
     DELETE: 'DELETE',
-}
+};
+
+export const REQUEST_STATUS = {
+    PENDING: 'PENDING',
+    OK: 'OK',
+    KO: 'KO'
+};
+
 const useFetch = (url, method) => {
-    const [data,setData] = useState([]);
+    const [result,setResult] = useState({status: REQUEST_STATUS.PENDING, data: []});
     useEffect(() => {
         fetch(url, {method})
             .then(response => response.json())
-            .then(json => setData(json instanceof Array ? json : []))
-            .catch(error => console.log(error));
+            .then(json => {
+                const data= json instanceof Array ? json : [];
+                setResult({status: REQUEST_STATUS.OK, data});
+                }
+            ).catch(error => {
+                console.log(error);
+                setResult({status: REQUEST_STATUS.KO, data: []});
+        });
     }, []);
-    return data;
+    return result;
 };
 
 export default useFetch;
